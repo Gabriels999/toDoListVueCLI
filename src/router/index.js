@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import ListaTarefas from "../views/ListaTarefas.vue";
+import NovaTarefa from "../views/NovaTarefa.vue";
 
 Vue.use(VueRouter);
 
@@ -18,6 +19,16 @@ const routes = [
     path: "/",
     name: "lista",
     component: ListaTarefas,
+  },
+  {
+    path: "/nova",
+    name: "novaTarefa",
+    component: NovaTarefa,
+  },
+  {
+    path: "/editar",
+    name: "editaTarefa",
+    component: NovaTarefa,
   },
 ];
 
